@@ -1,0 +1,167 @@
+body {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    background: rgb(224,255,0);
+    background: radial-gradient(circle, rgba(224,255,0,1) 0%, rgba(94,139,0,1) 49%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-shadow: 1px 3px 2px black;
+    text-align: center;
+}
+
+p, a, h4, h5, h6, button, input, label {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+button#place-bet, button#stand, button#card {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+footer {
+    margin-top: auto; 
+}
+
+/* Custom styles for the loading screen */
+#loadingModal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header h1 {
+    text-align: center;
+    color: #ffbc00;
+    font-size: 2em;
+}
+
+header#gametitle {
+    background: blueviolet;
+    padding: 1em;
+}
+
+#dealer, #player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#dealer_total, #player_total  {
+    margin: auto;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Gowun Dodum';
+}
+
+.form-switch label {
+    font-weight: 600;
+}
+
+#betting {
+    text-align: center;
+}
+
+#gameStatusModal .modal-content{
+    background: rgba(0,0,0,.8);
+}
+
+#game_status {
+    font-family: "Codystar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffbc00;
+    font-size:xxx-large;
+    text-align: center;
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-game-status {
+    font-size: xx-large;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Card container */
+.flip-card {
+    width: calc(100% / 6);
+    height: auto;
+    aspect-ratio: 1/1.5;
+    max-height: 150px;
+    perspective: 500px;
+    margin: 0.2em;
+   
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Flips the card when this class is applied */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back of the card */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+
+.flip-card-back {
+    background-color: #bbb;
+}
+
+.flip-card-front {
+    transform: rotateY(180deg);
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-16% + 0.4em)); /* Slide left by 20px */
+    }
+}
+
+.card-slide {
+    animation: slide-left 0.5s ease-out forwards;
+}
+
+#sec_debug {
+    word-wrap: break-word;
+}
+
+canvas, canvas .confetti-canvas {
+    z-index: 1056;
+  }
+
+  .fixed-width {
+    width: calc(100%/4);
+}
