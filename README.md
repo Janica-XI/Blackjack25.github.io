@@ -2,7 +2,7 @@
 
 This project is a simple implementation of a card game called Blackjack, with a twist: the goal is to get as close to 25 points as possible without going over.
 
-The project was developed as a school assignment to practice fundamental concepts in JavaScript.
+The project was developed as a school assignment to practice fundamental concepts in JavaScript and the frontend was implemented with the framework bootstrap.
 
 ## Key Features
 **MVC Design Pattern**: The application is built using the Model-View-Controller (MVC) design pattern, separating the application's logic into three distinct parts:
